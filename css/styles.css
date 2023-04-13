@@ -128,28 +128,27 @@ h6 {
 }
 
 .container {
-  /* width: 1158px; */
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 428px) {
-    .container {
-       max-width: 428px;
-    }
+  .container {
+     max-width: 428px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-      max-width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1158px) {
-    .container {
-       max-width: 1158px;
-    }
+  .container {
+    max-width: 1158px;
+  }
 }
 /* --- Header --- */
 
@@ -188,7 +187,6 @@ h6 {
 
 .nav-list {
   display: flex;
-  /* margin-left: 76px; */
   gap: 40px;
 }
 
@@ -291,8 +289,6 @@ h6 {
 
 .address-list {
   display: flex;
-
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -311,7 +307,6 @@ h6 {
 
 .address-link {
   color: var(--slate-text-color);
-  /* padding: 24px 0 24px 0; */
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -322,6 +317,124 @@ h6 {
   color: var(--ocean-pressed-color);
 }
 
+.menu-open-burger {
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-burger {
+    display: none;
+  }
+}
+
+.burger-icon {
+  stroke: #2E2F42;;
+}
+
+.mobile-menu{
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  padding: 80px 24px 40px 40px;
+  overflow: auto;
+  transition: opacity, visibility;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.close-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--cornflower-accent-color);
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: var(--navyblue-dark-color);
+  transition: background-color var(--animation-delay) var(--animation-func),
+  color var(--animation-delay) var(--animation-func);
+}
+
+.mobile-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--navyblue-dark-color);
+}
+
+.mobile-link.active {
+  color: var(--ocean-pressed-color);
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-address-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #4D5AE5;
+}
+
+.mobile-tell-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mob-soc-list {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--iris-brand-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* --- Hero section ---  */
 
 .hero-section {
@@ -389,9 +502,9 @@ h6 {
 }
 
 @media screen and (min-width: 1158px) {
-    .hero-caption {
-      margin-bottom: 48px;
-    }
+  .hero-caption {
+    margin-bottom: 48px;
+  }
 }
 
 .hero-button {
@@ -494,7 +607,6 @@ h6 {
 
 /* --- What are we doing section --- */
 .section.about-section {
-  
   display: none;
 }
 
@@ -540,9 +652,9 @@ h6 {
 }
 
 @media screen and (min-width: 1158px) {
-    .team {
-      width: calc((100% - 3 * 24px) / 4);
-    }
+  .team {
+    width: calc((100% - 3 * 24px) / 4);
+  }
 }
 
 .team-list {
@@ -683,9 +795,9 @@ h6 {
 }
 
 @media screen and (min-width: 1158px) {
-    .footer {
-      padding: 100px 0;
-    }
+  .footer {
+    padding: 100px 0;
+  }
 }
 
 .logo-footer {
@@ -748,11 +860,6 @@ h6 {
     flex-wrap: nowrap;
     gap: 0;
   }
-}
-
-.soc-footer {
-  /* width: 208px;
-  margin-left: 120px; */
 }
 
 .title-soc-footer {
@@ -1142,7 +1249,6 @@ h6 {
 }
 
 .footer-subscribe {
-  /* margin-left: auto */
   width: 100%;
 }
 
