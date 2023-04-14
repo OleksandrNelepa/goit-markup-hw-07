@@ -378,6 +378,9 @@ h6 {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+
+.mobile-link {
   color: var(--navyblue-dark-color);
 }
 
@@ -395,7 +398,8 @@ h6 {
   gap: 40px;
 }
 
-.mobile-address-link {
+
+.mobile-tell-link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -403,7 +407,7 @@ h6 {
   color: #4D5AE5;
 }
 
-.mobile-tell-link {
+.mobile-address-link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
